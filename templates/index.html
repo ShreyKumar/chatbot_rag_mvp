@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Minimal RAG Chatbot</title>
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="chat-wrapper">
+    <div class="chat-header">
+      Minimal Chatbot (Echo Backend)
+    </div>
+
+    <!-- This is where all the messages will appear -->
+    <div id="messages" class="chat-messages"></div>
+
+    <!-- Form for user input -->
+    <form id="chat-form" class="chat-input-area">
+      <input
+        id="msg-input"
+        type="text"
+        placeholder="Type a message and press Enter..."
+        autocomplete="off"
+      />
+      <button id="send-btn" type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- Link to the JS file -->
+  <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+</html>
